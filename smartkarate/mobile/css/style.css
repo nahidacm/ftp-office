@@ -1,0 +1,116 @@
+@import url('default.css');
+
+.pc {
+	display: block !important;
+}
+
+.pc-inline {
+	display: inline-block !important;
+}
+
+.mobile, .mobile-inline {
+	display: none !important;
+}
+
+body {
+	font: 17px Roboto;
+}
+
+.wrapper {
+	min-width: 250px;
+	padding: 35px;
+}
+
+.logo {
+	background: url(images/logo.png) no-repeat;
+	display: block;
+	width: 183px;
+	height: 214px;
+	margin: 4px auto 39px;
+}
+
+.logo-s {
+	background: url(images/logo-s.png) no-repeat;
+	width: 64px;
+	height: 62px;
+	margin: 0 auto;
+}
+
+.rounded-button {
+	font-size: 18px;
+	font-weight: bold;
+	color: #a8a9ad;
+	text-align: center;
+	line-height: 40px;
+	border: solid 2px #a8a9ad;
+	height: 40px;
+	margin-top: 10px;
+	display: block;
+	border-radius: 20px;
+}
+
+	.rounded-button:first-child {
+		margin-top: 0;
+	}
+
+	.rounded-button:hover {
+		text-decoration: none;
+		color: #fff;
+		background-color: #a8a9ad;
+	}
+
+	.rounded-button.green {
+		color: #fff !important;
+		background-color: #26ab45;
+		border-color: #26ab45;
+	}
+
+		.rounded-button.green:hover {
+			background-color: #1c7931;
+			border-color: #1c7931;
+		}
+
+.logo-container {
+	padding: 0 30px;
+	margin: 4px auto 32px;
+	position: relative;
+}
+
+h1 {
+	font-size: 35px;
+	font-weight: 300;
+	text-align: center;
+	color: #652D91;
+	margin-bottom: 28px;
+}
+
+h3 {
+	margin-bottom: 10px;
+}
+
+.page-nav {
+	display: block;
+	width: 31px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+	.page-nav.prev {
+		background: url(images/left-arrow.png) no-repeat center;
+		left: -10px;
+	}
+
+	.page-nav.next {
+		background: url(images/right-arrow.png) no-repeat center;
+		right: -10px;
+	}
+
+.location {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+	.location h3, .location p {
+		margin-bottom: 5px;
+	}

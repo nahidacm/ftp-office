@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	
+      <name>RealEstateManager</name>
+      <creationDate>17 May 2009</creationDate>
+      <author>Rob de Cleen, Andrey Kvasnevskiy</author>
+      <copyright>GNU/GPL http://www.gnu.org/copyleft/gpl.html</copyright>
+      <authorEmail>rob@decleen.com; akbet@mail.ru;</authorEmail>
+      <authorUrl>http://www.ordasoft.com</authorUrl>
+      <license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+      <version>1.0 Basic</version>
+      <description>RealEstateManager - component for sale ant rent houses</description>
+
+      <params>
+              <param name="back_button" type="list" default="" label="Back Button" description="Show/Hide a Back Button, that returns you to the previously view page">
+                      <option value="">Use Global</option>
+                      <option value="0">Hide</option>
+                      <option value="1">Show</option>
+              </param>
+      </params>
+      //SITE FILES
+
+      <files>
+      
+          <filename>index.html</filename>
+          <filename>realestatemanager.php</filename>
+          <filename>realestatemanager.html.php</filename>
+          <filename>realestatemanager.class.php</filename>
+          <filename>realestatemanager.class.rent.php</filename>
+          <filename>realestatemanager.class.rent_request.php</filename>
+          <filename>realestatemanager.class.buying_request.php</filename>
+          <filename>realestatemanager.class.review.php</filename>
+            
+          <filename>language/english.php</filename>
+          <filename>language/index.html</filename>
+          <filename>edocs/index.html</filename>
+
+	  <filename>images/rating-0.gif</filename>
+	  <filename>images/rating-1.gif</filename>
+	  <filename>images/rating-2.gif</filename>
+	  <filename>images/rating-3.gif</filename>
+	  <filename>images/rating-4.gif</filename>
+	  <filename>images/rating-5.gif</filename>
+	  <filename>images/rating-6.gif</filename>
+	  <filename>images/rating-7.gif</filename>
+	  <filename>images/rating-8.gif</filename>
+	  <filename>images/rating-9.gif</filename>
+	  <filename>images/rating-10.gif</filename>
+	  <filename>images/no-img_eng.gif</filename>
+          <filename>images/folder.png</filename>
+          <filename>images/rem_logo.png</filename>
+          
+          <filename>images/search.gif</filename>
+
+          <filename>images/available.png</filename>
+          <filename>images/not_available.png</filename>
+
+                              
+          <filename>photos/index.html</filename>
+          <filename>photos/v703809_1.jpg</filename>
+          <filename>photos/v703809_1_mini.jpg</filename>
+          <filename>photos/yard_001.van.default.jpg</filename>
+          <filename>photos/yard_001.van.default_mini.jpg</filename>
+          
+          <filename>photos/0AAEB744-A404-194B-3163-8997D41AF8B3_14761_Caymans1Brac_IMG_00_0000.jpg</filename>
+          <filename>photos/0AAEB744-A404-194B-3163-8997D41AF8B3_14761_Caymans1Brac_IMG_00_0000_mini.jpg</filename>
+          <filename>photos/00E0A4DD-339D-93CA-2A99-429BC87E624B_43775_halg3737494_IMG_08_0000.jpg</filename>
+          <filename>photos/00E0A4DD-339D-93CA-2A99-429BC87E624B_43775_halg3737494_IMG_08_0000_mini.jpg</filename>
+          
+          <filename>photos/2D227A61-4368-32AE-F69E-5943CC7ABA2F_14761_Caymans1Brac_IMG_04_0000.jpg</filename>
+          <filename>photos/2D227A61-4368-32AE-F69E-5943CC7ABA2F_14761_Caymans1Brac_IMG_04_0000_mini.jpg</filename>
+          <filename>photos/3D838282-E6F6-E767-D2E4-00238D02F748_11797_11797_BerlinerAllee_IMG_03_0001.jpg</filename>
+          <filename>photos/3D838282-E6F6-E767-D2E4-00238D02F748_11797_11797_BerlinerAllee_IMG_03_0001_mini.jpg</filename>
+          
+          <filename>photos/5E66F200-C064-247C-7534-DF6A223D33D4_14761_Caymans1Brac_IMG_01_0000.jpg</filename>
+          <filename>photos/5E66F200-C064-247C-7534-DF6A223D33D4_14761_Caymans1Brac_IMG_01_0000_mini.jpg</filename>
+          <filename>photos/7A7EE5FC-F03C-0E97-55EE-25FB69D9EC66_43775_halg3737494_IMG_11_0000.jpg</filename>
+          <filename>photos/7A7EE5FC-F03C-0E97-55EE-25FB69D9EC66_43775_halg3737494_IMG_11_0000_mini.jpg</filename>
+          
+          
+          <filename>photos/9B635E72-7BEB-1C8E-A0FA-90A6E270E374_11797_11797_BerlinerAllee_IMG_04_0001.jpg</filename>
+          <filename>photos/9B635E72-7BEB-1C8E-A0FA-90A6E270E374_11797_11797_BerlinerAllee_IMG_04_0001_mini.jpg</filename>
+          <filename>photos/17BACBE1-3D02-0CCE-F12E-B58B8C8137DB_06f1_1.jpg</filename>
+          <filename>photos/17BACBE1-3D02-0CCE-F12E-B58B8C8137DB_06f1_1_mini.jpg</filename>
+          
+          
+          <filename>photos/37D9A64B-225D-5289-E9E7-EBCE287BC3DD_06f1_4.jpg</filename>
+          <filename>photos/37D9A64B-225D-5289-E9E7-EBCE287BC3DD_06f1_4_mini.jpg</filename>
+          <filename>photos/037EF87C-5F23-51D1-E0DD-6C40998AF812_11797_11797_BerlinerAllee_IMG_05_0001.jpg</filename>
+          <filename>photos/037EF87C-5F23-51D1-E0DD-6C40998AF812_11797_11797_BerlinerAllee_IMG_05_0001_mini.jpg</filename>
+          
+          
+          <filename>photos/44D7FA92-D80A-A42C-E0FE-F786D995DF9A_11797_11797_BerlinerAllee_IMG_01_0001.jpg</filename>
+          <filename>photos/44D7FA92-D80A-A42C-E0FE-F786D995DF9A_11797_11797_BerlinerAllee_IMG_01_0001_mini.jpg</filename>
+          <filename>photos/54BC3511-E626-527D-3DE9-E07BCDB4656A_06f1_2.jpg</filename>
+          <filename>photos/54BC3511-E626-527D-3DE9-E07BCDB4656A_06f1_2_mini.jpg</filename>
+          
+          
+          
+          <filename>photos/87697233-A1D8-FAFE-BB41-B5CA160394B3_06f1_3.jpg</filename>
+          <filename>photos/87697233-A1D8-FAFE-BB41-B5CA160394B3_06f1_3_mini.jpg</filename>
+          <filename>photos/B4063096-99A6-B607-9C95-2F7698D021F0_11797_11797_BerlinerAllee_IMG_00_0001.jpg</filename>
+          <filename>photos/B4063096-99A6-B607-9C95-2F7698D021F0_11797_11797_BerlinerAllee_IMG_00_0001_mini.jpg</filename>
+          
+          
+          
+          <filename>photos/E08E7360-750B-B3FF-3F43-5F0E573E90AB_14761_Caymans1Brac_IMG_02_0000.jpg</filename>
+          <filename>photos/E08E7360-750B-B3FF-3F43-5F0E573E90AB_14761_Caymans1Brac_IMG_02_0000_mini.jpg</filename>
+          <filename>photos/E492E6D2-A40D-043B-E718-4A2465594693_43775_halg3737494_IMG_01_0000.jpg</filename>
+          <filename>photos/E492E6D2-A40D-043B-E718-4A2465594693_43775_halg3737494_IMG_01_0000_mini.jpg</filename>
+          
+          
+          <filename>photos/EFEFBE30-3FFA-B373-256F-0D7CC6F30786_43775_halg3737494_IMG_10_0000_t.jpg</filename>
+          <filename>photos/EFEFBE30-3FFA-B373-256F-0D7CC6F30786_43775_halg3737494_IMG_10_0000_t_mini.jpg</filename>
+          <filename>photos/F56C8962-56F6-D459-EEFD-4FBCF5AB7F13_38778_4mill_IMG_00_0000.jpg</filename>
+          <filename>photos/F56C8962-56F6-D459-EEFD-4FBCF5AB7F13_38778_4mill_IMG_00_0000_mini.jpg</filename>
+          
+          <filename>photos/36BCB112-98D8-2D0F-F4FA-46DEDA1779B8_1988108_3_51962_16_12_2008.jpg</filename>
+          <filename>photos/36BCB112-98D8-2D0F-F4FA-46DEDA1779B8_1988108_3_51962_16_12_2008_mini.jpg</filename>
+          <filename>photos/8E19E9AD-0195-3753-C9C1-95505BF64687_1988108_2_51962_16_12_2008.jpg</filename>
+          <filename>photos/8E19E9AD-0195-3753-C9C1-95505BF64687_1988108_2_51962_16_12_2008_mini.jpg</filename>
+          
+          <filename>photos/01874F65-262E-F33F-188E-C494F08B8E4A_206054228.105.jpg</filename>
+          <filename>photos/01874F65-262E-F33F-188E-C494F08B8E4A_206054228.105_mini.jpg</filename>
+          
+          <filename>photos/83D5ABC3-98FA-E53C-2AB1-567A063AAE50_206054228.106.jpg</filename>
+          <filename>photos/83D5ABC3-98FA-E53C-2AB1-567A063AAE50_206054228.106_mini.jpg</filename>
+      
+          <filename>lightbox/css/lightbox.css</filename>
+          
+          <filename>lightbox/js/builder.js</filename>
+          <filename>lightbox/js/effects.js</filename>
+          <filename>lightbox/js/lightbox.js</filename>
+          <filename>lightbox/js/prototype.js</filename>
+          <filename>lightbox/js/scriptaculous.js</filename>
+          <filename>lightbox/js/jquery.autocomplete.js</filename>
+          <filename>lightbox/js/jquery.lightbox.js</filename>
+          <filename>lightbox/js/jquery-1.2.6.js</filename>
+          
+          <filename>lightbox/images/blank.gif</filename>
+          <filename>lightbox/images/bullet.gif</filename>
+          <filename>lightbox/images/close.gif</filename>
+          <filename>lightbox/images/closelabel.gif</filename>
+          <filename>lightbox/images/donate-button.gif</filename>
+          <filename>lightbox/images/download-icon.gif</filename>
+          <filename>lightbox/images/loading.gif</filename>
+          <filename>lightbox/images/next.gif</filename>
+          <filename>lightbox/images/nextlabel.gif</filename>
+          <filename>lightbox/images/prev.gif</filename>
+          <filename>lightbox/images/prevlabel.gif</filename>
+    
+          <filename>TABS/tabcontent.js</filename>
+          <filename>TABS/tabcontent.css</filename>
+          <filename>TABS/indentbg.gif</filename>
+          <filename>TABS/indentbg2.gif</filename>
+          <filename>TABS/shade.gif</filename>
+          <filename>TABS/shadeactive.gif</filename> 
+
+	</files>
+
+	<install>
+            <queries>
+                <query>DROP TABLE IF EXISTS `#__rem_houses`</query>
+                <query>DROP TABLE IF EXISTS `#__rem_rent`</query>
+                <query>DROP TABLE IF EXISTS `#__rem_rent_request`</query>
+                <query>DROP TABLE IF EXISTS `#__rem_buying_request`</query>
+                <query>DROP TABLE IF EXISTS `#__rem_review`</query>
+                <query>DROP TABLE IF EXISTS `#__rem_suggestion`</query>
+                <query>DROP TABLE IF EXISTS `#__rem_photos`</query>
+                <query>DELETE FROM `#__categories` WHERE `section` LIKE 'com_realestatemanager'</query>
+                
+                <query>CREATE TABLE IF NOT EXISTS `#__rem_houses` (
+                      `id` int(11) unsigned NOT NULL auto_increment,
+                      `houseid` varchar(20) NOT NULL default '0',
+                      `catid` int(11) NOT NULL default '0',
+                      `sid` int(11) NOT NULL default '0',
+                      `fk_rentid` int(11) default '0',
+                                              
+                      `description` text NOT NULL default '',
+                      `link` varchar(250) NOT NULL default '',
+                      `listing_type` varchar(45) NOT NULL default '',
+                      `price` varchar(14) NOT NULL default '',
+                      `htitle` varchar(200) NOT NULL default '',
+                      
+                      `hlocation` varchar(100) NOT NULL default '',			
+                      `hlatitude` varchar(20) NOT NULL default '',
+                      `hlongitude` varchar(20) NOT NULL default '',
+                      `map_zoom` varchar(5) NOT NULL default '',  
+
+                      `bathrooms` int(11) default '0',
+                      `bedrooms` int(11) default '0',
+                      `broker` varchar(100) default '',
+                      `contacts` varchar(250) default '',
+                      `image_link` varchar(200) default '',
+                      `listing_status` varchar(45) default '',
+                      `price_type` varchar(45) default '',
+                      `property_type` varchar(45) default '',
+                      `provider_class` varchar(45) default '',
+                      `year` varchar(4) default '1900',
+      
+                      `agent` varchar(45) default '',
+                      `area` varchar(45) default '0',
+                      `expiration_date` date default '2030-01-01',
+                      `feature` varchar(100) default '',
+                      `hoa_dues` varchar(45) default '',
+                      `lot_size` varchar(45) default '0',
+                      `model` varchar(50) default '',
+                      `property_taxes` FLOAT(3,2) default '0.0',
+                      `school` varchar(45) default '',
+                      `school_district` varchar(45) default '',
+                      `style` varchar(45) default '',
+                      `zoning` varchar(45) default '',
+                      
+                      `checked_out` int(11) NOT NULL default '0',
+                      `checked_out_time` datetime NOT NULL default '0000-00-00 00:00:00',
+                      
+                      `ordering` int(11) NOT NULL default '0',
+                      `date` datetime NOT NULL default '0000-00-00 00:00:00',
+                      `hits` int(11) NOT NULL default '0',
+                      `edok_link` varchar(200) default '',
+                      `published` tinyint(1) NOT NULL default '0',
+                      `approved` tinyint(1) NOT NULL default '1',
+      
+                      PRIMARY KEY  (`id`),
+                      INDEX (`catid`),
+                      FOREIGN KEY (`catid`) REFERENCES `#__categories`(`id`) ON DELETE CASCADE
+                      ) TYPE=MyISAM AUTO_INCREMENT=2 
+                        
+                </query>
+                <query>CREATE TABLE IF NOT EXISTS `#__rem_photos` (
+                        `id` int(11) unsigned NOT NULL auto_increment,
+                        `fk_houseid` int(11),
+                        `thumbnail_img` varchar(250) default '',
+                        `main_img` varchar(250) default '',
+                        PRIMARY KEY  (`id`),
+                        FOREIGN KEY (`fk_houseid`) REFERENCES #__rem_houses(`id`)
+                        ) TYPE=MyISAM AUTO_INCREMENT=2 ;
+                </query>
+                <query>CREATE TABLE IF NOT EXISTS `#__rem_rent` (
+                        `id` int(11) unsigned NOT NULL auto_increment,
+                        `fk_houseid` int(11) NOT NULL default 0,
+                        `rent_from` datetime NOT NULL default '0000-00-00 00:00:00',
+                        `rent_until` datetime,
+                        `rent_return` datetime,
+                        `checked_out` int(11) NOT NULL default 0,
+                        `checked_out_time` datetime NOT NULL default '0000-00-00 00:00:00',
+                        `user_name` VARCHAR(150),
+                        `user_email` VARCHAR(100),
+                        `user_mailing` TEXT default '',
+                        PRIMARY KEY  (`id`),
+                        FOREIGN KEY (`fk_houseid`) REFERENCES #__rem_houses(`id`)
+                        ) TYPE=MyISAM AUTO_INCREMENT=2 ;
+                  </query>
+                  <query>CREATE TABLE IF NOT EXISTS `#__rem_rent_request` (
+                          `id` int(11) unsigned NOT NULL auto_increment,
+                          `fk_houseid` int(11) NOT NULL default 0,
+                          `rent_from` date NOT NULL default '0000-00-00',
+                          `rent_until` date,
+                          `rent_request` datetime NOT NULL default '0000-00-00 00:00:00',
+                          `checked_out` int(11) NOT NULL default 0,
+                          `checked_out_time` datetime NOT NULL default '0000-00-00 00:00:00',
+                          `user_name` VARCHAR(150),
+                          `user_email` VARCHAR(100),
+                          `user_mailing` TEXT default '',
+                          `status` int(1) default 0,
+                          PRIMARY KEY  (`id`),
+                          FOREIGN KEY (`fk_houseid`) REFERENCES #__rem_houses(`id`)
+                          ) TYPE=MyISAM AUTO_INCREMENT=2 ;
+                  </query>
+                  <query>CREATE TABLE IF NOT EXISTS `#__rem_buying_request` (
+                              `id` int(11) unsigned NOT NULL auto_increment,
+                              `fk_houseid` int(11) NOT NULL default 0,
+                              `buying_request` datetime NOT NULL default '0000-00-00 00:00:00',
+                              `checked_out` int(11) NOT NULL default 0,
+                              `checked_out_time` datetime NOT NULL default '0000-00-00 00:00:00',
+                              `customer_name` varchar(250) default '',
+                              `customer_email` varchar(250) default '',
+                              `customer_phone` TEXT default '',
+                              `status` int(1) default 0,
+                              PRIMARY KEY  (`id`),
+                              FOREIGN KEY (`fk_houseid`) REFERENCES #__rem_houses(`id`)
+                          ) TYPE=MyISAM AUTO_INCREMENT=2 ;
+                  </query>
+                  <query>CREATE TABLE IF NOT EXISTS `#__rem_review` (
+                            `id` int(11) unsigned NOT NULL auto_increment,
+                            `fk_houseid` int(11) NOT NULL default 0,
+                            `user_name` VARCHAR(150),
+                            `user_email` VARCHAR(100),
+                            `date` datetime NOT NULL default '0000-00-00 00:00:00',
+                            `rating` int(2) default 0,
+                            `title` varchar(250) default '',
+                            `comment` TEXT,
+                            PRIMARY KEY  (`id`),
+                            FOREIGN KEY (`fk_houseid`) REFERENCES #__rem_houses(`id`)
+                        ) TYPE=MyISAM AUTO_INCREMENT=2 ;
+                  </query>
+                  <query>CREATE TABLE IF NOT EXISTS `#__rem_suggestion` (
+                      `id` int(11) unsigned NOT NULL auto_increment,
+                      `user_name` VARCHAR(150),
+                      `user_email` VARCHAR(100),
+                      `date` datetime NOT NULL default '0000-00-00 00:00:00',
+                      `title` varchar(250) default '',
+                      `comment` TEXT,
+                      PRIMARY KEY  (`id`)
+                      ) TYPE=MyISAM AUTO_INCREMENT=2 ;
+                  </query>
+                </queries>
+        </install>
+        <uninstall>
+                <queries>
+                        <query>DELETE FROM `#__rem_houses`</query>
+                        <query>DROP TABLE `#__rem_houses`</query>
+                        <query>DELETE FROM `#__rem_rent`</query>
+                        <query>DROP TABLE `#__rem_rent`</query>
+                        <query>DELETE FROM `#__rem_rent_request`</query>
+                        <query>DROP TABLE `#__rem_rent_request`</query>
+                        <query>DELETE FROM `#__rem_review`</query>
+                        <query>DROP TABLE `#__rem_review`</query>
+                        <query>DELETE FROM `#__rem_suggestion`</query>
+                        <query>DROP TABLE `#__rem_suggestion`</query>
+                        <query>DELETE FROM `#__rem_photos`</query>
+                        <query>DROP TABLE IF EXISTS `#__rem_photos`</query>
+                        <query>DELETE FROM `#__rem_buying_request`</query>
+                        <query>DROP TABLE IF EXISTS `#__rem_buying_request`</query>
+                        <query>DELETE FROM `#__categories` WHERE `section` LIKE 'com_realestatemanager'</query>	
+                </queries>
+        </uninstall>	
+        <installfile>install.realestatemanager.php</installfile>
+        <installfile>install.realestatemanager.helper.php</installfile>
+        <uninstallfile>uninstall.realestatemanager.php</uninstallfile>
+  
+        <administration>
+                <menu>RealEstate Manager</menu>
+                <submenu>
+                        <menu>Houses</menu>
+                        <menu link="option=com_realestatemanager&amp;section=categories">Categories</menu>
+                        <menu task="rent_requests">Rent Requests</menu>
+                        <menu task="buying_requests">Sale Manager</menu>
+                        <menu task="config">Settings</menu>
+                        <menu task="about">About</menu>
+                </submenu>
+                //ADMIN FILES
+  
+             <files> 
+        
+                <filename>includes/functions.js</filename>
+                <filename>includes/adminmenus.php</filename>
+                <filename>includes/category.php</filename>
+                <filename>includes/classes.php</filename>
+                <filename>includes/html.php</filename>
+                <filename>includes/menu.php</filename>
+                <filename>includes/parameters.php</filename>    
+                <filename>includes/mambothandler.php</filename>    
+            
+                <filename>toolbar_ext.php</filename>
+                <filename>menubar_ext.php</filename>
+       
+                <filename>index.html</filename>
+                <filename>functions.php</filename> 
+                <filename>admin.realestatemanager.php</filename>
+                <filename>admin.realestatemanager.html.php</filename>
+                <filename>admin.realestatemanager.class.impexp.php</filename>
+                <filename>admin.realestatemanager.class.others.php</filename>
+                <filename>admin.realestatemanager.class.conf.php</filename>
+                <filename>toolbar.realestatemanager.php</filename>
+                <filename>toolbar.realestatemanager.html.php</filename>
+                <filename>includes/realestatemanager.css</filename>
+
+                <filename>doc/releasenote.php</filename>
+                <filename>doc/changelog.html</filename>
+                <filename>doc/LICENSE.txt</filename>
+                <filename>doc/README.txt</filename>
+                <filename>doc/index.html</filename>
+                <filename>exports/index.html</filename>
+                <filename>exports/csv.xsl</filename>
+                <filename>exports/sample_data.xml</filename>  
+                <filename>compat.joomla1.5.php</filename>
+                <filename>install.realestatemanager.php</filename>
+                <filename>install.realestatemanager.helper.php</filename> 
+                <filename>uninstall.realestatemanager.php</filename>
+                          
+                                  
+                <filename>images/dm_edit_16.png</filename>
+                <filename>images/dm_component_16.png</filename> 
+                <filename>images/dm_credits_16.png</filename>                           
+          
+                <filename>images/dm_view_button.png</filename>
+                <filename>images/dm_view_button_32.png</filename>
+                
+                <filename>images/dm_refetchInfos.png</filename>
+                <filename>images/dm_refetchInfos_32.png</filename>
+          
+                <filename>images/dm_lend.png</filename>
+                <filename>images/dm_lend_32.png</filename>
+          
+                <filename>images/dm_lend_return.png</filename>
+                <filename>images/dm_lend_return_32.png</filename>
+                <filename>images/lend_return_f2.png</filename>
+
+                <filename>images/dm_accept.png</filename>
+                <filename>images/dm_accept_32.png</filename>
+                
+                <filename>images/dm_decline.png</filename>
+                <filename>images/dm_decline_32.png</filename>
+                
+                <filename>images/dm_import.png</filename>
+                <filename>images/dm_import_32.png</filename>
+          
+                <filename>images/dm_export.png</filename>
+                <filename>images/dm_export_32.png</filename>
+          
+                <filename>images/print.png</filename>
+                
+                <filename>images/lend_f2.png</filename>
+                  
+                <filename>images/building_icon.jpg</filename>
+
+              </files>
+	</administration>
+</install>
