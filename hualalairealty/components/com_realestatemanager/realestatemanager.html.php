@@ -183,6 +183,7 @@ class HTML_realestatemanager {
                     <?php
                     for ($i = 0; $i < $numRows; $i++) {
                         $row = $houses[$j];
+                        
                         $link = JRoute::_('index.php?option=com_realestatemanager&amp;task=view&amp;id=' . $row->id . '&amp;catid=' . $row->catid . '&amp;Itemid=' . $Itemid);
                         ?>		
 
@@ -439,7 +440,11 @@ class HTML_realestatemanager {
      * rent Status 
      */
     function displayHouse(& $house, & $tabclass, & $params, & $currentcat, & $rating, & $house_photos) {
-
+        
+        if($house->published == 0){
+            header ("Location: http://www.hualalairealty.com"); exit();
+        }
+        
         global $hide_js, $mainframe, $Itemid, $realestatemanager_configuration, $mosConfig_live_site, $mosConfig_absolute_path, $my;
 
 
@@ -762,6 +767,7 @@ type="text/javascript"></script>');
         </script>
 
         <?php
+         
         if ($_REQUEST['m'] != 1) {
             ?>
             <div class="banner_image" style="height:590px;">
