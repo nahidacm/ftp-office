@@ -1,0 +1,71 @@
+*** Changelog ***
+
+
+Version 1.1.0  (Released 28 December, 2012)
+	1. Added option to disable the Middle Header Section Background.
+	2. Was fixed the header and footer social links.
+	3. Were made and added permalinks for all News shortcodes and pages.
+	4. Was made the News archive page.
+	5. Was fixed the category in news single post.
+	6. Was added the Google+ icon in the header and the footer.
+	7. Was added email validation in the Contact page.
+	8. Was added search widget.
+	9. Was added the option to add html or adsense code instead the header banner image with url.
+	10 Were added additional 6 slider shortcodes for news and blog posts (by last posts added, by id array).
+	11 Were added additional 6 shortcodes for blog posts (by last posts category, by comments, by id array).
+	12 Were added 12 slider options in admin panel (animation - 'fade' or 'slide', direction - 'horizontal' or 'vertical', animationLoop, slideshow, slideshowSpeed, animationSpeed, controlNav, directionNav, initDelay, randomize, pauseOnAction,  pauseOnHover).
+
+
+	Were made modifications in the files:
+		a) archive.php
+		b) footer.php
+		c) functions.php
+		d) search.php
+		e) single.php
+		f) style.css
+		g) template-blog-one.php
+		h) template-blog-two.php
+		i) template-contact.php
+		k) template-media.php
+		l) template-news-all.php
+		m) template-news-one.php
+		n) template-news-two.php
+		o) /admin/theme-settings.php
+		p) /functions/custom-css.php
+		q) /functions/shortcodes.php
+		r) /functions/slider-functions.php
+		s) /functions/slider-functions-posts.php
+		t) /functions/slider-functions-news.php
+		u) /functions/widget-search.php
+		v) /functions/widgets.php
+		w) /functions/news-manager.php
+		x) /functions/widget-followers.php
+		y) /images/icon_google_plus.png
+		z) /images/icon_google_plus_hover.png
+
+
+Version 1.0.2  (Released 21 December, 2012)
+	1) Added shortcodes into the WP editor
+	2) Added option to change the background in the middle header section where is the map displayed near logo
+	3) Added the last comments widget with options to set the comment counts, comment length and custom post type (post, news, media or all)
+	4) Fixed the "About the Author" section in single post.
+
+	Were made modifications in the files:
+		a) functions.php
+		b) header.php
+		c) single.php
+		d) /admin/theme-settings.php
+		e) /functions/widget-recent-comments.php (new file)
+
+
+
+
+
+Version 1.0.1  (Released 20 December, 2012)
+	Added the option to disable the views count for blog posts pages, news posts pages and media posts pages
+
+
+
+
+
+Version 1.0  (Released 15 December, 2012)
