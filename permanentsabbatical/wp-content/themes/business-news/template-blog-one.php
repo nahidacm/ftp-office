@@ -56,11 +56,13 @@ get_header();
 
                     <div class="info">
                         <div class="date"><p><a href="#"><?php echo get_the_time('d F, Y'); ?></a></p></div>
-                        <div class="author"><p><?php _e('By:', 'weblionmedia'); ?> <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php if (!get_the_author_meta('first_name') && !get_the_author_meta('last_name')) {
-                the_author_posts_link();
-            } else {
-                echo get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
-            } ?></a></p></div>
+                        <div class="author"><p><?php _e('By:', 'weblionmedia'); ?> <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php
+                                    if (!get_the_author_meta('first_name') && !get_the_author_meta('last_name')) {
+                                        the_author_posts_link();
+                                    } else {
+                                        echo get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
+                                    }
+                                    ?></a></p></div>
 
                         <div class="r_part">
                             <div class="category">
@@ -76,11 +78,11 @@ get_header();
                     </div>
 
                     <div class="content"><p>
-        <?php
-        $text = get_the_excerpt();
-        $more = substr($text, -5);
-        echo substr($text, 0, strlen($text) - 5) . '<a href="' . get_permalink() . '">' . $more . '</a>';
-        ?></p>
+                            <?php
+                            $text = get_the_excerpt();
+                            $more = substr($text, -5);
+                            echo substr($text, 0, strlen($text) - 5) . '<a href="' . get_permalink() . '">' . $more . '</a>';
+                            ?></p>
                     </div>
                 </div>
             </article>
@@ -92,12 +94,12 @@ get_header();
 
 <div class="block_pager">
 
-<?php
-if (function_exists('wp_pagenavi')) {
-    echo wp_pagenavi();
-}
-wp_reset_postdata();
-?>
+    <?php
+    if (function_exists('wp_pagenavi')) {
+        echo wp_pagenavi();
+    }
+    wp_reset_postdata();
+    ?>
 
     <div class="clearboth"></div>
 </div>
@@ -105,21 +107,24 @@ wp_reset_postdata();
 </div>
 
 <div class="sidebar">
-<?php //echo 'Interesting'; ?>
     <?php
     wp_reset_query();
     $custom = get_post_custom($post->ID);
     $current_sidebar = $custom["current_sidebar"][0];
 
-    if ($current_sidebar) {
-        if (!function_exists('dynamic_sidebar') || !dynamic_sidebar($current_sidebar)) :
-        endif;
-    } else {
-        if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("Blog Sidebar")) :
-        endif;
+    try {
+        if ($current_sidebar) {
+            if (!function_exists('dynamic_sidebar') || !dynamic_sidebar($current_sidebar)) :
+            endif;
+        }
+        else {
+            if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("Blog Sidebar")) :
+            endif;
+        }
+    } catch (Exception $exc) {
+        echo $exc->getTraceAsString();
     }
-//    echo 'paaa more Interesting';
-//    var_dump(dynamic_sidebar("Blog Sidebar"));
+
     ?>
 
 </div>
