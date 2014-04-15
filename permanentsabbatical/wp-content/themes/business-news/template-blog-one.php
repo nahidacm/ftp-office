@@ -79,9 +79,9 @@ get_header();
 
                     <div class="content"><p>
                             <?php
-                            $text = get_the_excerpt();
-                            $more = substr($text, -5);
-                            echo substr($text, 0, strlen($text) - 5) . '<a href="' . get_permalink() . '">' . $more . '</a>';
+                            $more = '<a href="' . get_permalink() . '">Read More</a>';
+                            $text = str_replace('&hellip;',$more,get_the_excerpt());
+                            echo $text;
                             ?></p>
                     </div>
                 </div>

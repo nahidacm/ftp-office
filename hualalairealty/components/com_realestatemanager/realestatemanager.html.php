@@ -106,11 +106,16 @@ class HTML_realestatemanager {
         if ($_REQUEST['m'] != 1) {
 
             for ($catInd = 0; $catInd < count($categories); $catInd++) {
-
+                
+                //Skip hidden category
+                if($categories[$catInd]->id == 70)
+                    continue; 
+                
                 // getting all houses for this category
                 $query = "SELECT * FROM #__rem_houses"
                         . "\nWHERE catid = '" . $categories[$catInd]->id . "' AND published='1' AND approved='1'"
                         . "\nORDER BY " . $order_by_name . " ASC";
+                
                 $database->setQuery($query);
                 $houses = $database->loadObjectList();
 
