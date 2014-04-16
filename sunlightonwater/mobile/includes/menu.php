@@ -26,6 +26,15 @@
       </div>
     </a>
     
+    <a href="kealakekua-bay-snorkel.php" id="linkPortfolio" class="pageLink pageLink-1-1 ">
+      <div class="iconBox">
+        <img src="img/home/icon-snorekel.jpg" alt="Kealakekua Bay Snorkel">
+      </div>
+      <div class="titleBox">
+        Kealakekua Bay Snorkel
+      </div>
+    </a>
+    
     
     <a href="eco-tours.php" id="linkBlog" class="pageLink pageLink-1-1" >
       <div class="iconBox">
