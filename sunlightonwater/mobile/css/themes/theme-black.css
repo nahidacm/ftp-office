@@ -1131,3 +1131,8 @@ a.make_reservation {
   font-weight: bold;
   line-height: 50px;
 }
+
+input[type="text"].reservation-input{
+    margin: 0 0 5px 0;
+    width: 44px;
+}

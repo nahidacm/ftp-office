@@ -5,8 +5,8 @@ if (isset($_POST['email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
 
-//    $email_to = "info@smartkarate.com";
-    $email_to = "nahidacm@gmail.com";
+    $email_to = "info@smartkarate.com";
+//    $email_to = "nahidacm@gmail.com";
 
     $email_subject = "Message from Smart Karate";
 
@@ -22,7 +22,7 @@ if (isset($_POST['email'])) {
 
         echo "Please go back and fix these errors.<br /><br />";
 
-//        die();
+        die();
     }
 
     // validation expected data exists
@@ -61,7 +61,7 @@ if (isset($_POST['email'])) {
 
     if (strlen($message) < 2) {
 
-        $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+        $error_message .= 'The Message you entered do not appear to be valid.<br />';
     }
 
     if (strlen($error_message) > 0) {
@@ -84,10 +84,7 @@ if (isset($_POST['email'])) {
 
     $email_message .= "Phone: " . clean_string($phone) . "\n";
 
-    $email_message .= "Message: " . clean_string($message) . "\n";
-
-
-
+    $email_message .= "Message: " . stripslashes($message) . "\n";
 
 
 // create email headers
@@ -96,7 +93,7 @@ if (isset($_POST['email'])) {
             'Reply-To: ' . $email_from . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
 
-    @mail($email_to, $email_subject, $email_message, $headers);
+    mail($email_to, $email_subject, $email_message, $headers);
     ?>
 
 

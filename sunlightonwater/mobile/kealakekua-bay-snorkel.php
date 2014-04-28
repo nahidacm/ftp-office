@@ -10,7 +10,7 @@
         <div id="header">
             <a href="index.php" class="homeButton" data-direction="reverse"></a>
             <a href="#" class="menuButton"></a>
-            <h1>KEALAKEKUA BAY AFTERNOON SNORKEL</h1>
+            <h1>Kealakekua Bay <br/>Afternoon Snorkel</h1>
 
         </div>
     </header>
@@ -45,22 +45,21 @@
                 <br/>
                 <script type="text/javascript" src="https://www.hawaiifun.org/reservation/common/calendar_js.jsp?jsversion=20140126"></script>
                 <script type="text/javascript" src="https://www.hawaiifun.org/reservation/external/functions.js?jsversion=20140126"></script>
-                <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>-->
-                <h1>Kealakekua Bay Snorkel </h1>
+                
                 <form>
                     <h3>
                         Guests
                     </h3>
                     <table>
                         <tr>
-                            <td>    <input type='text' id='guests_a7121_t965' value='0' size='2'></td><td><b>$118.00</b> &nbsp;Adults <i><font color="grey"></font></i></td>
+                            <td><input class="reservation-input" type='text' id='guests_a7121_t965' value='0' size='4'></td><td><b>$118.00</b> &nbsp;Adults <i><font color="grey"></font></i></td>
                         </tr>
                         <tr>
-                            <td>  <input type='text' id='guests_a7121_t1337' value='0' size='2'></td>
+                            <td><input class="reservation-input" type='text' id='guests_a7121_t1337' value='0' size='4'></td>
                             <td><b>$85.00</b> &nbsp;Child 12 & under<i><font color="grey"></font></i> </td>
                         </tr>
                         <tr>
-                            <td> <input type='text' id='guests_a7121_t1662' value='0' size='2'></td>
+                            <td> <input class="reservation-input" type='text' id='guests_a7121_t1662' value='0' size='2'></td>
                             <td><b>$65.00</b>&nbsp;Ride Along/with a swimmer<i><font color="grey"></font></i> </td>
                         </tr>
                     </table>
@@ -69,7 +68,6 @@
                         Choose Date
                     </h3>
 
-                    Activity Date
                     <input id="date_a7121" onclick="calendar(7121, 'date_a7121', false);" readOnly size="15" />
                     <a onMouseOver="window.status = 'Date Picker';
                         return true;" onMouseOut="window.status = '';
@@ -86,19 +84,24 @@
                     <p></p>
 
                     <hr>
-                    <p></p><input type="checkbox" id="cancellationpolicy_a7121" /><label for="cancellationpolicy_a7121">Check here Acknowledging our Cancellation policy:<br><font size="2"><i>
+                    <p></p>
+                    <input data-role="none" type="checkbox" id="cancellationpolicy_a7121" /><label for="cancellationpolicy_a7121">Check here Acknowledging our Cancellation policy:</label><br><font size="2"><i>
+                        <p>
                             <strong>1 - 4 PASSENGERS:</strong>
                             Notification of cancellation must be received by telephone at least 48 HOURS prior to departure time to receive a full refund. Any cancellation given with less than 48 Hours remaining before departure time will not be offered a refund. 
-                            <br>
+                            <br/>
+                        <p/><p>
                             <strong>5 - 10 PASSENGERS:</strong>
                             Notification of cancellation much be received by telephone at least 72 HOURS prior to departure time to receive a full refund. No refund will be offered with less than 72 Hours remaining before departure time. 
-                            <br>
+                            <br/>
+                        <p/><p>
                             <strong>10 + PASSENGERS:</strong>
                             Cancellations must be made 7 DAYS prior to departure date to receive a full refund. No refund will be offered with less than 7 days remaining before departure date.
-                            <br>
+                            <br/>
+                        <p/><p>
                             <strong>PRIVATE CHARTERS:</strong>
                             Cancellations must be made at least 2 WEEKS prior to departure date to receive a full refund. No refund will be offered with less than 14 days remaining before departure date.</i></font>
-                    </label><p></p>
+                    </p>
 
                     <input type="button" value="Book Now" onclick="if (!checkcancellation(document.getElementById('cancellationpolicy_a7121')))
                             return false;
@@ -122,7 +125,15 @@
 
         <div class="content">
             <div class="groupBox innerContent">
-                <p><img width="100%" title="Photo " alt="Photo Sun Light On Water" src="img/site_images/photo07.jpg"></p>
+                <p>
+                    <img width="100%" title="Photo " alt="Photo Sun Light On Water" src="img/site_images/kealakekua-bay-snorkel/1.jpg">
+                </p>
+                <p>
+                    <img width="100%" title="Photo " alt="Photo Sun Light On Water" src="img/site_images/kealakekua-bay-snorkel/2.jpg">
+                </p>
+                <p>
+                    <img width="100%" title="Photo " alt="Photo Sun Light On Water" src="img/site_images/kealakekua-bay-snorkel/3.jpg">
+                </p>
             </div>
         </div>
 
@@ -132,5 +143,5 @@
 
 
 
-<?php
-require_once ("includes/footer.php");
+    <?php
+    require_once ("includes/footer.php");
