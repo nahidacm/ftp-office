@@ -22,7 +22,10 @@ get_header(); ?>
 	<div class="services-container">
 
             <div class="service mobile">
-                <h2><a href="tel:(808) 942-0773">Call Us</a></h2>
+                <h2><a href="tel:(808) 942-0773">Call us</a></h2>
+            </div>
+            <div class="service mobile">
+                <h2><a href="mailto:help@supergeeks.net">Email us</a></h2>
             </div>
             <div class="service mobile">
                 <h2><a href="/location">Locations</a></h2>
