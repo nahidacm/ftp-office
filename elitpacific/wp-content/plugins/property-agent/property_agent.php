@@ -41,6 +41,7 @@ function propertyAgentList_options() {
 <?php	
 
 $wp_list_table = _get_list_table('WP_Property_List_Table');
+
 $pagenum = $wp_list_table->get_pagenum();
 $wp_list_table->prepare_items();
 $wp_list_table->views();
