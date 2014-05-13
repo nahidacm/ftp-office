@@ -893,6 +893,48 @@ type="text/javascript"></script>');
 
 
 
+
+            <?php //} } ?>
+
+                                    <!--Request Property Information<br />
+                                    <br />
+                                    <form action="#" method="post" id="reqFrm" name="reqFrm">
+                                            <input type="checkbox" id="chkProperty" name="chkProperty" value="1"/>
+                                        <label for="chkProperty">Property Plans &amp; Features</label>
+                                        <div class="gap8"></div>
+                                        
+                                            <input type="checkbox" id="chkMaintence" name="chkMaintence" value="1" />
+                                        <label for="chkMaintence">Property Maintenance Costs</label>
+                                         <div class="gap8"></div>
+                                         
+                                            <input type="checkbox" id="chkComparable" name="chkComparable" value="1" />
+                                        <label for="chkComparable">Comparable Sales</label>
+                                         <div class="gap8"></div>
+                                         <div class="gap8"></div>
+
+                                         
+                                        <label for="txtName" class="label_name">First Name:</label>
+                                        <input type="text" id="user_name" name="user_name" value="" />
+                                         <div class="gap8"></div>
+                                         
+                                        <label for="txtName" class="label_name">Last Name:</label>
+                                        <input type="text" id="user_lname" name="user_lname" value="" />
+                                         <div class="gap8"></div>
+                                         
+                                        <label for="txtEmail" class="label_email">Email:</label>
+                                        <input type="text" id="user_email" name="user_email" value="" />
+                                         <div class="gap8"></div>
+                                         <input type="hidden" id="fk_houseid" name="fk_houseid" value="<?php //echo $house->hlocation; ?>" />
+                                         <input type="button" class="btn_submit float_right add_request" onclick="return chk_validationsite();" />
+                                         <div class="clear"></div>
+                                    </form>
+                                    <br /> -->
+                        
+                       
+                            </td>
+                            <td width="45">&nbsp;</td>
+                            <td width="270" valign="top" style="line-height:22px;">
+                                
             <?php if ($house->virtual_link != '') { ?>
                                         <p>									
                                             <a href="<?php echo $house->virtual_link; ?>" target="blank">Virtual Tour</a>                                
@@ -936,47 +978,6 @@ type="text/javascript"></script>');
                                         </p>
             <?php } ?>
 
-
-            <?php //} } ?>
-
-                                    <!--Request Property Information<br />
-                                    <br />
-                                    <form action="#" method="post" id="reqFrm" name="reqFrm">
-                                            <input type="checkbox" id="chkProperty" name="chkProperty" value="1"/>
-                                        <label for="chkProperty">Property Plans &amp; Features</label>
-                                        <div class="gap8"></div>
-                                        
-                                            <input type="checkbox" id="chkMaintence" name="chkMaintence" value="1" />
-                                        <label for="chkMaintence">Property Maintenance Costs</label>
-                                         <div class="gap8"></div>
-                                         
-                                            <input type="checkbox" id="chkComparable" name="chkComparable" value="1" />
-                                        <label for="chkComparable">Comparable Sales</label>
-                                         <div class="gap8"></div>
-                                         <div class="gap8"></div>
-
-                                         
-                                        <label for="txtName" class="label_name">First Name:</label>
-                                        <input type="text" id="user_name" name="user_name" value="" />
-                                         <div class="gap8"></div>
-                                         
-                                        <label for="txtName" class="label_name">Last Name:</label>
-                                        <input type="text" id="user_lname" name="user_lname" value="" />
-                                         <div class="gap8"></div>
-                                         
-                                        <label for="txtEmail" class="label_email">Email:</label>
-                                        <input type="text" id="user_email" name="user_email" value="" />
-                                         <div class="gap8"></div>
-                                         <input type="hidden" id="fk_houseid" name="fk_houseid" value="<?php //echo $house->hlocation; ?>" />
-                                         <input type="button" class="btn_submit float_right add_request" onclick="return chk_validationsite();" />
-                                         <div class="clear"></div>
-                                    </form>
-                                    <br /> -->
-                        
-                       
-                            </td>
-                            <td width="45">&nbsp;</td>
-                            <td width="270" valign="top" style="line-height:22px;">
                                 <?php if($house->property_video_image_link !=''){ ?>
                                 <a href="<?php echo $house->property_video_url; ?>" target="_blank">
                                <img src="<?php echo $house->property_video_image_link; ?>" style="width:269px;"/> 
@@ -985,10 +986,15 @@ type="text/javascript"></script>');
                                 <?php
                         $link = JRoute::_('index.php?option=com_contact&view=contact&id=1&pid=' . $house->id);
                         ?>    
-                                    <p style="margin-top:20px; text-align: center;"><a href="<?php echo $link; ?>" class="moreinfobutton" style="color:#FFFFFF">Request Additional Information</a></p>
+                                    <p style="margin-top:20px; text-align: left;"><a href="<?php echo $link; ?>" class="moreinfobutton" style="color:#FFFFFF">Request Additional Information</a></p>
                             </td> 
                         </tr>
                     </table>
+                    <div class="embeded-property-video" style="text-align: center;">
+                        <?php if(trim($house->property_video_embed_code) !=''){
+                            echo stripcslashes($house->property_video_embed_code);
+                             } ?>
+                    </div>
                 </div>
             </div>
 

@@ -1129,6 +1129,15 @@ class HTML_realestatemanager {
                 
                 <tr>
                     <td valign="top" align="right">
+                        <strong>Property video embed code:</strong>
+                    </td>
+                    <td align="left">
+                        <textarea style="height: 200px; width: 262px;" name="property_video_embed_code"><?php echo stripcslashes($row->property_video_embed_code) ?></textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td valign="top" align="right">
                         <strong>Property video url:</strong>
                     </td>
                     <td align="left">

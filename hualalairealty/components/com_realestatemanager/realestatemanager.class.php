@@ -148,6 +148,7 @@ class mosRealEstateManager extends mosDBTable {
 	/** @var varchar(200) */
 	var $brochure_link=null;	
 	var $property_video_url=null;	
+	var $property_video_embed_code=null;	
 	/** @var varchar(200) */
 	var $floor_link=null;
         var $features_list_link=null;
