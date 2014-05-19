@@ -1,10 +1,10 @@
 @charset "utf-8";
 /*--
-	Theme Name: theme1418
-	Theme URI: http://template-help.com/
-	Description: A theme for Wordpress 3.2.X from Template-Help.com Collection
-	Author: Template_Help.com 
-	Author URL: http://www.Template-Help.com/ 
+        Theme Name: theme1418
+        Theme URI: http://template-help.com/
+        Description: A theme for Wordpress 3.2.X from Template-Help.com Collection
+        Author: Template_Help.com 
+        Author URL: http://www.Template-Help.com/ 
 --*/
 /* General
 ---------------------------------------- */
@@ -27,8 +27,8 @@ body {
 }
 
 /*.home #main {
-	background:url(images/tail.gif) 50% 0 repeat-x;
-	}*/
+        background:url(images/tail.gif) 50% 0 repeat-x;
+        }*/
 /* List styling */
 dl dt {
     padding: 0 0 3px 0;
@@ -72,10 +72,10 @@ dl dd {
 
 /* Logo */
 /*.logo {
-	position:absolute;
-	left:5px;
-	top:16px;
-	}----23 jan 2012---*/
+        position:absolute;
+        left:5px;
+        top:16px;
+        }----23 jan 2012---*/
 .logo {
     margin-top: 15px;
     float: left;
@@ -1356,8 +1356,7 @@ nav.oldernewer {
 #gallery .portfolio li span.image-border {
     display: block;
     border: 1px solid #000;
-    width: 196px;
-    height: 139px;
+    width: 100%;
     position: relative;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -1367,8 +1366,7 @@ nav.oldernewer {
 #gallery .portfolio li a.image-wrap {
     display: block;
     overflow: hidden;
-    width: 196px;
-    height: 139px;
+    width: 100%;
     position: relative;
     background: #4b4b4b url(images/loading-folio.gif) 50% 50% no-repeat;
     -webkit-transition: all .2s ease-in-out;
@@ -1479,7 +1477,8 @@ nav.oldernewer {
     margin-bottom: 20px;
 }
 
-.widget h3 {
+.widget h3, .widget h2 {
+    font-size: 12px;
     overflow: hidden;
     border-bottom: 1px solid #282828;
     margin: 0 -14px 12px -14px;
@@ -2754,4 +2753,44 @@ form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select
 form.pmpro_form select {
     background: #d3d3d3 !important;
     border: 1px solid #ffffff !important;
+}
+
+/*Home style NHD*/
+.home-page-flyer{
+    width: 550px;
+    float: left;
+}
+
+.home-admin-video{
+    width: 400px;
+    float: right;
+}
+
+#gallery .portfolio .home-page-flyer li,
+#gallery .portfolio .home-admin-video li {
+    width:auto;
+    display: block;
+}
+
+.home-page-item-2 > ul > li{
+    float: left;
+    margin-left: 15px;
+    width: 288px;
+    border-top: none;
+    padding-top: 0;
+}
+.home-page-item-2 > ul > li:first-child, #gallery .top-3-video-container .portfolio li:first-child{
+    margin-left: 0;
+}
+#gallery .top-3-video-container .portfolio li{
+    width: 278px;
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.header_utilities_block .header_utilities_child {
+    float: right;
+}
+.rating .widget {
+    min-height: 340px;
 }
