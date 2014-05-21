@@ -968,7 +968,10 @@ ul#recentcomments li a { border:none; background:none; float:none; }
 
 #contact-form #submitbutton, #respond input#submit { float:left; padding:0px 10px 0px 10px; color:#ccc; border:none; background:url(lib/img/common/button-wide.png) no-repeat; margin:0px 0 16px 0; text-align:center; line-height:40px; color:#333; width:160px}
 
-
+#submitbutton{
+    height: 43px;
+    cursor: pointer;
+}
 
 
 
