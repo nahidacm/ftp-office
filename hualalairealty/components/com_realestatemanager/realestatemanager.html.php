@@ -453,7 +453,7 @@ class HTML_realestatemanager {
         global $hide_js, $mainframe, $Itemid, $realestatemanager_configuration, $mosConfig_live_site, $mosConfig_absolute_path, $my;
 
 
-        $mainframe->addCustomHeadTag('<script src="' . $mosConfig_live_site . '/components/com_realestatemanager/lightbox/js/jquery-1.2.6.js"
+        $mainframe->addCustomHeadTag('<script src="' . $mosConfig_live_site . '/templates/hualalairealty/tools/js/jquery-1.4.1.min.js"
 type="text/javascript"></script>');
         $mainframe->addCustomHeadTag('<script
 src="' . $mosConfig_live_site . '/components/com_realestatemanager/lightbox/js/jquery.lightbox.js"
@@ -742,6 +742,7 @@ type="text/javascript"></script>');
                 var tn1 = jQuery('.mygallery').tn3({
                     skinDir: "skins",
                     imageClick: "fullscreen",
+                    keyNavigation: "always",
                     image: {
                         maxZoom: 1.5,
                         crop: true,
