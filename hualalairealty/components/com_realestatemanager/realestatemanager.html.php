@@ -453,7 +453,7 @@ class HTML_realestatemanager {
         global $hide_js, $mainframe, $Itemid, $realestatemanager_configuration, $mosConfig_live_site, $mosConfig_absolute_path, $my;
 
 
-        $mainframe->addCustomHeadTag('<script src="' . $mosConfig_live_site . '/templates/hualalairealty/tools/js/jquery-1.4.1.min.js"
+        $mainframe->addCustomHeadTag('<script src="' . $mosConfig_live_site . '/components/com_realestatemanager/lightbox/js/jquery-1.2.6.js"
 type="text/javascript"></script>');
         $mainframe->addCustomHeadTag('<script
 src="' . $mosConfig_live_site . '/components/com_realestatemanager/lightbox/js/jquery.lightbox.js"
@@ -768,6 +768,14 @@ type="text/javascript"></script>');
                                 partDirection: "left"
                             }]
                     }
+                });
+
+                jQuery(document).keydown(function(e) {
+                   if (e.keyCode == 37) {
+                       jQuery('.tn3-prev').click();
+                   } else if (e.keyCode == 39) {
+                       jQuery('.tn3-next').click();
+                   }
                 });
             });
         </script>
