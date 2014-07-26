@@ -22,12 +22,12 @@ jimport( 'joomla.database.table' );
 <div style="width: 958px; float:left; padding: 0 0 0 0; margin:0px; border: 0;">
 <?php
 $counts = count($this->allData);
-$rows = $counts/4;
+$rows = $counts/5;
 
 if ($rows == 1){
-	$numRows = (count($this->allData)%4)+1;
+	$numRows = (count($this->allData)%5)+1;
 }else{
-	$numRows = (count($this->allData)/4);
+	$numRows = (count($this->allData)/5);
 }
 $j = 0;
 ?>
@@ -97,5 +97,23 @@ $j = 0;
 <tr><td colspan="7">&nbsp;<br>&nbsp;</td></tr>
 <?php $j = $j + 5;}?>
 </tbody></table>
-
+    <?php
+    if($this->pagination->limitstart > 0){
+        $prev_page_limitstart = $this->pagination->limitstart - $this->pagination->limit;
+        $prev_page_link = '<a style="float: left;" href="http://www.hualalairealty.com/component/hualalainews/hualalainews/show/48/?limitstart='.$prev_page_limitstart.'">Previous Page</a>';
+    }else{
+        $prev_page_limitstart = FALSE;
+        $prev_page_link = '';
+    }
+    if( $this->pagination->total > ($this->pagination->limitstart + $this->pagination->limit)){
+        $next_page_limitstart = $this->pagination->limitstart + $this->pagination->limit;
+        $next_page_link = '<a style="float: right;" href="http://www.hualalairealty.com/component/hualalainews/hualalainews/show/48/?limitstart='.$next_page_limitstart.'">Next Page</a>';
+    }else{
+        $next_page_limitstart = FALSE;
+        $next_page_link = '';
+    }
+    
+    echo $prev_page_link.$next_page_link;
+    ?>
+    
 </div>

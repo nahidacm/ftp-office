@@ -98,11 +98,11 @@ class hualalainewsViewhualalainews extends JView
   	  $cid			= JRequest::getVar( 'cid', array(0), '', 'array' );
 	  	  
 	  $pathway->addItem( JText::_( "Hualalai in the News" ));
-	  $params->set('page_title',	JText::_( "Hualalai in the News" ));	  	  
+	  $params->set('page_title',	JText::_( $detailData[0]->title ));	  	  
 	  $document->setTitle( $params->get( 'page_title' ) );	
 	  	
 	  $this->assignRef('params',		    $params);
-	  $this->assignRef('detailData', 		$detailData);		  
+	  $this->assignRef('detailData', 		$detailData);
 	}
 }
 ?>
