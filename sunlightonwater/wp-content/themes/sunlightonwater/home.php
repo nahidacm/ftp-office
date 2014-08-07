@@ -69,7 +69,7 @@ Template Name: Home Page
                  <a href="about-dolphins">READ MORE --></a>
             </li>
         </ul>
-        <br class="clear" />
+         <br class="clear" />
         <div class="accredited">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/hvcb_member.jpg" width="152" height="75" alt="Member Image Sunlight on Water" title="Member Image" />
             <!--<img src="<?php bloginfo('stylesheet_directory'); ?>/images/bbbseal3.gif" width="94" height="152" alt="Member Image1 Sunlight on Water" title="Member Image1" />-->
@@ -79,5 +79,15 @@ Template Name: Home Page
             <img src="http://sunlightonwater.com/wp-content/uploads/2014/05/TripAdvisor-Cert-e1400652354749.jpg"/>
             
         </div>
+        <div>
+            <div style="width: 50%;float: left; margin-left: 20px;">
+                <?php echo do_shortcode('[mc4wp_form]'); ?>
+            </div>
+            <div style="float: right; margin-right: 20px;">
+                <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fsunlightonwater808&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=122659817756243" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;" allowTransparency="true"></iframe>
+            </div>
+            <br class="clear" />
+        </div>
+        
         
 <?php get_footer(); ?>
