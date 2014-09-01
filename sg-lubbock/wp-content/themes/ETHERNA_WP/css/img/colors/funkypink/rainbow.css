@@ -1,0 +1,51 @@
+/*******************************************************************************************************************************************************************
+************************************************************************** USER MODULAR STYLES *********************************************************************
+*******************************************************************************************************************************************************************/
+
+/* LINKS COLOR */
+a, a:active, a:visited ,#main_link_color,#personal_data p span,#personal_data p span a{ color:#d171ce; }
+
+/* LINKS ONHOVER COLOR */
+a:hover { color: #1e1e1e; }
+
+/* FOOTER LINKS ONHOVER COLOR */
+#footer a:hover{ color:#ffffff; }
+
+/* HEADINGS STRONG COLOR & HEADING FONTS*/
+h1 strong,h2 strong,h3 strong,h4 strong,h5 strong,h6 strong,.dropcapcolor,.inner_main .widget ul.testimonials li p span,.post_header a:hover,.breadcrumbs p span,h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,.hotstuff ul li a,#ds_relatedpost .ds_related a:hover,.inner_main ul li.popular-posts ul li a:hover{
+color:#d171ce;
+}
+blockquote, q {border-color:#d171ce;}
+.post_header a{
+text-decoration:none;
+color:#1e1e1e;
+}
+
+/* BACKGROUND */
+body{
+background:url(img/background.png) repeat-x scroll 0 0 #e8e9eb;
+}
+.dropcapspot{
+background-color:#d171ce;
+}
+
+/* DEFAULT BUTTON - to change the color of default button, copy the styles for one of available colors from line 1478 in this style.css */
+a.superbutton,.inner_main input.superbutton,button.superbutton,.inner_main input.wpcf7-submit,#comments input#submit,.pagination .current{
+color:#ffffff !important;
+background:url(img/superbutton.png) repeat-x center -1081px transparent;
+border:1px solid #a35eaf;
+box-shadow:inset 0px 1px 1px #e8acee;
+text-shadow:1px 1px #a35eaf;
+}
+a.superbutton:hover,.inner_main input.superbutton:hover,a.superbutton.selected,button.superbutton:hover,.inner_main input.wpcf7-submit:hover,#comments input#submit:hover{
+background:url(img/superbutton.png) repeat-x center -1110px transparent;
+}
+
+/* SELECTION COLOR */
+::-moz-selection{ background: #d171ce; color:#fff; text-shadow: none; }
+::selection { background:#d171ce; color:#fff; text-shadow: none; } 
+a:link { -webkit-tap-highlight-color: #d171ce; } 
+
+/*******************************************************************************************************************************************************************
+************************************************************************** USER MODULAR STYLES *********************************************************************
+*******************************************************************************************************************************************************************/
