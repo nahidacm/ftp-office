@@ -50,7 +50,7 @@ wp_head();
 		<div id="logo"><a href="<?php bloginfo("url"); ?>"><img src="<?php if($ds_eth_logo_upload){echo $ds_eth_logo_upload;} else { bloginfo('template_url'); echo ('/images/logo.png'); }; ?>" alt="" /></a></div>
 		<?php if($ds_eth_adv_user_contact == 'No'){ ?>
 		<div id="personal_data">
-                    <p>Location:<span> 66th St, Suite 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> Lubbock, TX 79424</span></p>
+                    <p>Location:<span> 66th St, Suite 5, Lubbock, TX 79424</span></p>
 			<?php if($ds_eth_company_phone != ' '){echo '<p>'.__('Phone','designSentry'); ?>: <span><?php echo $ds_eth_company_phone; ?></span></p><?php } ?>
 			<!--
                             <?php if($ds_eth_company_mail != ' '){echo '<p>'.__('E-Mail','designSentry'); ?>: <span><a href="mailto:<?php echo $ds_eth_company_mail; ?>"><?php echo $ds_eth_company_mail; ?></a></span></p><?php } ?>
